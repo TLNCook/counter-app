@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 
 function App() {
-  const [count, setCount] = useState(0)
+const [count, setCount] = useState(0)
 
-  return (
+  return(
     <>
-      <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>add 1</button>
-      <button onClick={() => setCount(count - 1)} disabled={count === 0}>minus 1</button>
-      <button onClick={() => setCount(0)} disabled={count === 0}>reset</button>
+      <div>{count}</div>
+      <button onClick={() => setCount(count + 1)}>Add</button>
+      <button onClick={() => setCount(count - 1)} disabled={count === 0}>Minus</button>
+      <button onClick={() => setCount(0)} disabled={count === 0}>Reset</button>
     </>
-
   )
 }
+
 export default App
